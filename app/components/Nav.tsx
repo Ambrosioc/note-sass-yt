@@ -2,6 +2,7 @@
 import LogoMdc from "@/public/next.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { ThemeToggle } from "./ThemeToggle";
 
 export default function Nav() {
 	return (
@@ -18,7 +19,9 @@ export default function Nav() {
 				</Link>
 			</div>
 
-			<div className="flex items-center gap-4"></div>
+			<div className="flex items-center gap-4">
+				<ThemeToggle />
+			</div>
 		</nav>
 	);
 }
